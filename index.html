@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Opeyemi Oladipupo | Video Editor</title>
+<meta name="description" content="Freelance video editor creating engaging short-form videos, social media content, reels, shorts and promotional videos for creators and businesses.">
+
+<meta property="og:title" content="Opeyemi Oladipupo | Video Editor">
+<meta property="og:description" content="Freelance video editor creating engaging short-form videos, social media content, reels, shorts and promotional videos for creators and businesses.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/og-cover.jpg">
+
+<link rel="stylesheet" href="style.css">
+
+<script>
+  /* Prevent theme flash: read stored/preferred theme before paint */
+  (function () {
+    var stored = localStorage.getItem('theme');
+    var theme = stored || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+    document.documentElement.setAttribute('data-theme', theme);
+  })();
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Ambient background layers -->
+<div class="bg-layer" aria-hidden="true">
+  <div class="orb orb-a"></div>
+  <div class="orb orb-b"></div>
+</div>
+
+<!-- NAVBAR -->
+<header class="nav-wrap">
+  <nav class="navbar" id="navbar">
+    <a href="#top" class="nav-logo">Opeyemi</a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navMenu">
+      <span></span><span></span><span></span>
+    </button>
+
+    <div class="nav-menu" id="navMenu">
+      <a href="#work" class="nav-link">Work</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </div>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle light and dark theme">
+        <svg class="icon icon-sun" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="4.2" stroke="currentColor" stroke-width="1.6"/><path d="M12 2.5v2.4M12 19.1v2.4M4.2 4.2l1.7 1.7M18.1 18.1l1.7 1.7M2.5 12h2.4M19.1 12h2.4M4.2 19.8l1.7-1.7M18.1 5.9l1.7-1.7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        <svg class="icon icon-moon" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.2 14.6A8.6 8.6 0 1 1 9.4 3.8a7 7 0 0 0 10.8 10.8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+      </button>
+      <a href="#contact" class="btn btn-nav">Let's Talk</a>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-inner">
+      <div class="hero-copy" data-reveal>
+        <p class="eyebrow">Video Editor <span class="dot">•</span> Visual Storyteller</p>
+        <h1 class="hero-title">
+          I make videos<br>
+          people want<br>
+          <span class="accent-text">to watch.</span>
+        </h1>
+        <p class="hero-sub">I turn raw footage into engaging short-form content, social media videos and cinematic edits for brands, creators and businesses.</p>
+        <div class="hero-ctas">
+          <a href="#work" class="btn btn-primary">View My Work</a>
+          <a href="#contact" class="btn btn-ghost">Let's Work Together</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" data-reveal>
+        <div class="reel-frame" id="reelFrame">
+          <video class="reel-video" id="reelVideo" poster="assets/thumbnails/showreel-poster.jpg" muted loop preload="metadata" playsinline>
+            <source src="assets/videos/showreel.mp4" type="video/mp4">
+          </video>
+          <button class="play-btn" id="reelPlay" aria-label="Play showreel">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
+          </button>
+          <div class="glass-badge badge-top">Showreel / 2026</div>
+          <div class="glass-badge badge-bottom">Short Form <span class="mid-dot">·</span> Reels <span class="mid-dot">·</span> Social</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue" aria-hidden="true"><span></span></div>
+  </section>
+
+  <!-- WORK -->
+  <section class="work" id="work">
+    <div class="section-head" data-reveal>
+      <h2 class="section-title">Selected Work</h2>
+      <p class="section-desc">A mix of formats — from long-form recordings cut down to punchy stories, to shorts built for the scroll.</p>
+    </div>
+
+    <div class="work-grid" id="workGrid">
+
+      <article class="project project-feature" data-reveal data-project="0">
+        <div class="project-media">
+          <video class="project-video" muted loop preload="metadata" playsinline
+                 poster="assets/thumbnails/real-estate-reel.jpg"
+                 data-src="assets/videos/real-estate-reel.mp4"></video>
+          <div class="project-overlay"></div>
+          <button class="play-btn play-btn-sm" aria-label="Open Real Estate Reel">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
+          </button>
+        </div>
+        <div class="project-meta">
+          <span class="project-num">01</span>
+          <div class="project-info">
+            <h3 class="project-title">Real Estate Reel</h3>
+            <p class="project-cat">Property &amp; Lifestyle</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" data-reveal data-project="1">
+        <div class="project-media">
+          <video class="project-video" muted loop preload="metadata" playsinline
+                 poster="assets/thumbnails/podcast-short.jpg"
+                 data-src="assets/videos/podcast-short.mp4"></video>
+          <div class="project-overlay"></div>
+          <button class="play-btn play-btn-sm" aria-label="Open Podcast Short">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
+          </button>
+        </div>
+        <div class="project-meta">
+          <span class="project-num">02</span>
+          <div class="project-info">
+            <h3 class="project-title">Podcast Short</h3>
+            <p class="project-cat">Talking Points</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" data-reveal data-project="2">
+        <div class="project-media">
+          <video class="project-video" muted loop preload="metadata" playsinline
+                 poster="assets/thumbnails/talking-head.jpg"
+                 data-src="assets/videos/talking-head.mp4"></video>
+          <div class="project-overlay"></div>
+          <button class="play-btn play-btn-sm" aria-label="Open Talking Head">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
+          </button>
+        </div>
+        <div class="project-meta">
+          <span class="project-num">03</span>
+          <div class="project-info">
+            <h3 class="project-title">Talking Head</h3>
+            <p class="project-cat">Interview Cut</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" data-reveal data-project="3">
+        <div class="project-media">
+          <video class="project-video" muted loop preload="metadata" playsinline
+                 poster="assets/thumbnails/product-promo.jpg"
+                 data-src="assets/videos/product-promo.mp4"></video>
+          <div class="project-overlay"></div>
+          <button class="play-btn play-btn-sm" aria-label="Open Product Promo">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
+          </button>
+        </div>
+        <div class="project-meta">
+          <span class="project-num">04</span>
+          <div class="project-info">
+            <h3 class="project-title">Product Promo</h3>
+            <p class="project-cat">Brand Film</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" data-reveal data-project="4">
+        <div class="project-media">
+          <video class="project-video" muted loop preload="metadata" playsinline
+                 poster="assets/thumbnails/youtube-short.jpg"
+                 data-src="assets/videos/youtube-short.mp4"></video>
+          <div class="project-overlay"></div>
+          <button class="play-btn play-btn-sm" aria-label="Open YouTube Short">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
+          </button>
+        </div>
+        <div class="project-meta">
+          <span class="project-num">05</span>
+          <div class="project-info">
+            <h3 class="project-title">YouTube Short</h3>
+            <p class="project-cat">Hook &amp; Retention</p>
+          </div>
+        </div>
+      </article>
+
+      <article class="project" data-reveal data-project="5">
+        <div class="project-media">
+          <video class="project-video" muted loop preload="metadata" playsinline
+                 poster="assets/thumbnails/cinematic-edit.jpg"
+                 data-src="assets/videos/cinematic-edit.mp4"></video>
+          <div class="project-overlay"></div>
+          <button class="play-btn play-btn-sm" aria-label="Open Cinematic Edit">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M8 5.5v13l11-6.5-11-6.5Z" fill="currentColor"/></svg>
+          </button>
+        </div>
+        <div class="project-meta">
+          <span class="project-num">06</span>
+          <div class="project-info">
+            <h3 class="project-title">Cinematic Edit</h3>
+            <p class="project-cat">Narrative Piece</p>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section-head" data-reveal>
+      <h2 class="section-title">What I Edit</h2>
+    </div>
+
+    <div class="services-list">
+      <div class="service-row" data-reveal>
+        <span class="service-num">01</span>
+        <div class="service-body">
+          <h3 class="service-title">Short-Form Content</h3>
+          <p class="service-desc">Reels, TikToks and YouTube Shorts built around strong hooks, pacing and retention.</p>
+        </div>
+      </div>
+      <div class="service-row" data-reveal>
+        <span class="service-num">02</span>
+        <div class="service-body">
+          <h3 class="service-title">Podcast &amp; Talking Head</h3>
+          <p class="service-desc">Turn long recordings into polished, engaging content.</p>
+        </div>
+      </div>
+      <div class="service-row" data-reveal>
+        <span class="service-num">03</span>
+        <div class="service-body">
+          <h3 class="service-title">Social Media Video</h3>
+          <p class="service-desc">Content designed specifically for Instagram, TikTok, YouTube and other platforms.</p>
+        </div>
+      </div>
+      <div class="service-row" data-reveal>
+        <span class="service-num">04</span>
+        <div class="service-body">
+          <h3 class="service-title">Promotional Video</h3>
+          <p class="service-desc">Clean, compelling edits for businesses, products and brands.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="section-head" data-reveal>
+      <h2 class="section-title">From Footage → Finished Content</h2>
+    </div>
+
+    <div class="process-track" data-reveal>
+      <div class="process-line" aria-hidden="true"><span class="process-line-fill"></span></div>
+      <div class="process-step">
+        <span class="process-num">01</span>
+        <p class="process-label">Send Footage</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">02</span>
+        <p class="process-label">Edit</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">03</span>
+        <p class="process-label">Review</p>
+      </div>
+      <div class="process-step">
+        <span class="process-num">04</span>
+        <p class="process-label">Publish</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="about-media" data-reveal>
+      <div class="about-media-inner">
+        <img src="assets/images/about-placeholder.jpg" alt="Opeyemi Oladipupo at work" loading="lazy">
+      </div>
+      <div class="glass-tag tag-1">Storytelling</div>
+      <div class="glass-tag tag-2">Editing</div>
+      <div class="glass-tag tag-3">Content</div>
+      <div class="glass-tag tag-4">Visuals</div>
+    </div>
+
+    <div class="about-copy" data-reveal>
+      <h2 class="section-title">Behind The Edits</h2>
+      <p class="about-text">I'm Opeyemi Oladipupo, a freelance video editor and digital creative. I work with footage the way a story needs it told — cutting for pace, rhythm and clarity, whether that's a fast-moving short or a slower, more cinematic piece.</p>
+      <p class="about-text">My focus is simple: take what you've filmed and shape it into something people actually finish watching.</p>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF -->
+  <section class="availability" id="availability">
+    <div class="availability-inner" data-reveal>
+      <span class="status-dot" aria-hidden="true"></span>
+      <p class="availability-text">Available for freelance projects</p>
+      <a href="#contact" class="btn btn-primary">Start a Project</a>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta">
+    <span class="cta-bg-word" aria-hidden="true">CREATE</span>
+    <div class="final-cta-inner" data-reveal>
+      <h2 class="final-cta-title">Got footage? Let's make something people remember.</h2>
+      <p class="final-cta-sub">Have a project in mind? Send me the details and let's turn your footage into content that works.</p>
+      <a href="#contact" class="btn btn-primary btn-lg">Start a Project</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="contact" id="contact">
+    <div class="contact-grid">
+      <div class="contact-info" data-reveal>
+        <h2 class="section-title">Contact</h2>
+        <p class="section-desc">Tell me about your project, or reach out directly.</p>
+        <ul class="contact-links">
+          <li><a href="mailto:hello@opeyemi.studio">hello@opeyemi.studio</a></li>
+          <li><a href="https://wa.me/000000000000" target="_blank" rel="noopener">WhatsApp</a></li>
+          <li><a href="https://linkedin.com" target="_blank" rel="noopener">LinkedIn</a></li>
+          <li><a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+        </ul>
+      </div>
+
+      <form class="contact-form" id="contactForm" data-reveal>
+        <div class="form-row">
+          <label for="fName">Name</label>
+          <input type="text" id="fName" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="fEmail">Email</label>
+          <input type="email" id="fEmail" name="email" required autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="fType">Project Type</label>
+          <select id="fType" name="projectType" required>
+            <option value="" disabled selected>Select a type</option>
+            <option value="short-form">Short-Form Content</option>
+            <option value="podcast">Podcast &amp; Talking Head</option>
+            <option value="social">Social Media Video</option>
+            <option value="promo">Promotional Video</option>
+            <option value="other">Something Else</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="fMessage">Message</label>
+          <textarea id="fMessage" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block">Send Project Inquiry</button>
+        <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>&copy; <span id="year"></span> Opeyemi Oladipupo</p>
+</footer>
+
+<!-- PROJECT MODAL -->
+<div class="modal" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-backdrop" id="modalBackdrop"></div>
+  <div class="modal-panel">
+    <button class="modal-close" id="modalClose" aria-label="Close project">
+      <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 5l14 14M19 5 5 19" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+    </button>
+
+    <div class="modal-video-wrap">
+      <video class="modal-video" id="modalVideo" controls playsinline></video>
+    </div>
+
+    <div class="modal-info">
+      <div>
+        <p class="modal-cat" id="modalCat"></p>
+        <h3 class="modal-title" id="modalTitle"></h3>
+        <p class="modal-desc" id="modalDesc"></p>
+      </div>
+      <div class="modal-nav">
+        <button class="modal-nav-btn" id="modalPrev" aria-label="Previous project">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M15 5 7 12l8 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <button class="modal-nav-btn" id="modalNext" aria-label="Next project">
+          <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M9 5l8 7-8 7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Custom cursor (desktop only, injected/enabled via JS) -->
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
